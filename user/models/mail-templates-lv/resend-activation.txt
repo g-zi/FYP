@@ -1,0 +1,1 @@
+﻿Sveiki #USERNAME#Jūs ar kas nors kitas paprašė naują aktyvavimo nuorodą, prašome naudoti nuorodą žemiau, norėdami aktyvuoti savo paskyrą#ACTIVATION-URL##INC-FOOTER#

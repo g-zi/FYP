@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>jscolor demo</title>
+</head>
+<body>
+<script type="text/javascript" src="jscolor.js"></script>
+<p> Click here: <input class="color" value="66ff00">
+<p> HSV:<input class="color {pickerMode:'HVS'}{pickerPosition:'top'}">
+<p> Stronger face: <input class="color {pickerFace:1}">
+<p> Transparent picker: <input class="color {pickerFaceColor:'transparent',pickerFace:3,pickerBorder:0,pickerInsetColor:'black'}">
+<p> No Slider: <input class="color {slider:false}">
+<p> Light colors only: <input class="color {minV:0.8}" value="66ff00">
+<p> Dark colors only: <input class="color {maxV:0.2}" value="66ff00">
+<p> Pale colors only: <input class="color {maxS:0.2}" value="66ff00">
+<p> Strong colors only: <input class="color {minS:0.8}" value="66ff00">
+<p> Change background: <input class="color"	onchange="document.getElementsByTagName('BODY')[0].style.backgroundColor = '#'+this.color">
+
+<script type="text/javascript" src="jscolor/jscolor.js"></script>
+<p> Ajax: <input id="myField1">
+<script type="text/javascript">
+var myPicker = new jscolor.color(document.getElementById('myField1'), {})
+myPicker.fromString('99FF33')  // now you can access API via 'myPicker' variable
+</script>
+
+</body>
+</html>

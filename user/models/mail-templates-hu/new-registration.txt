@@ -1,0 +1,1 @@
+﻿Helló #USERNAME#Köszönjük, hogy megtisztel honlapunkon #WEBSITENAME##ACTIVATION-MESSAGE##INC-FOOTER#

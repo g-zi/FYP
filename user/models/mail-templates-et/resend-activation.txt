@@ -1,0 +1,1 @@
+﻿Tere #USERNAME#Teie või keegi teine on taotletud uue aktiveerimise link, palun kasutage url alla, et aktiveerida oma konto#ACTIVATION-URL##INC-FOOTER#

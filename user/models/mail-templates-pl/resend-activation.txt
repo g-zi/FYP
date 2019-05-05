@@ -1,0 +1,1 @@
+﻿Cześć #USERNAME#Ty lub ktoś inny o nowy link aktywacyjny, proszę aktywować konto użyć poniższy adres URL#ACTIVATION-URL##INC-FOOTER#

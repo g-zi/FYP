@@ -1,0 +1,90 @@
+/* Inline Popup */
+
+div.InlinePopup {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+div.InlinePopup div.InlinePopupWindow {
+	position: absolute;
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+	background: white;
+	overflow: hidden;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.InlinePopup div.InlinePopupWindow span {
+	display: block;
+	height: 16px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+div.InlinePopup div.InlinePopupWindow .InlinePopupTitlebar {
+	color: white;
+	margin: 0;
+	padding: 0;
+	height: 16px;
+	border-bottom: 1px solid black;
+	background: #000066 url(../images/titlebar.gif) no-repeat top left;
+	cursor: move;
+	overflow: hidden;
+}
+
+div.InlinePopup div.InlinePopupWindow .InlinePopupTitlebar span {
+	width: auto;
+	padding-left: 50px;
+}
+
+div.InlinePopup div.InlinePopupWindow .InlinePopupTitlebar img {
+	float: right;
+	margin: 0;
+	padding: 1px 1px 0 0;
+	cursor: pointer;
+}
+
+div.InlinePopup div.InlinePopupWindow .InlinePopupBody {
+	border-top: none;
+	border-bottom: none;
+}
+
+div.InlinePopup iframe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+}
+
+div.InlinePopup div.InlinePopupWindow .InlinePopupStatusbar {
+	margin: 0;
+	padding: 0;
+	height: 14px;
+	background: #d4d0c8;
+	border-top: 1px solid black;
+	overflow: hidden;
+}
+
+div.InlinePopup div.InlinePopupWindow .InlinePopupResizer {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	width: 20px;
+	background: url(../images/window_resize.gif) no-repeat bottom right;
+	cursor: se-resize;
+}

@@ -1,0 +1,1 @@
+﻿Sveicināti #USERNAME#Jūs vai kāds cits ir pieprasījusi jaunu aktivizācijas saiti, lūdzu, izmantojiet url zemāk, lai aktivizētu savu kontu#ACTIVATION-URL##INC-FOOTER#

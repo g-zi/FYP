@@ -1,0 +1,1 @@
+﻿Hallo #USERNAME#U of iemand anders heeft een nieuwe activatie link aangevraagd, dan kunt u gebruik de url om uw account te activeren#ACTIVATION-URL##INC-FOOTER#

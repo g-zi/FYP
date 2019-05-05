@@ -1,0 +1,1 @@
+﻿Hello #USERNAME#Vi ali nekdo drug je zahteval novo aktivacijsko povezavo, prosimo, uporabite URL spodaj, da aktivirate svoj račun#ACTIVATION-URL##INC-FOOTER#

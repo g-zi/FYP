@@ -1,0 +1,1 @@
+﻿Hej #USERNAME#Du eller en anden har anmodet om en ny aktivering link, bedes du bruge nedenstående URL for at aktivere din konto#ACTIVATION-URL##INC-FOOTER#

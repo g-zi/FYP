@@ -1,0 +1,1 @@
+﻿Alo #USERNAME#Tu sau altcineva a solicitat o nouă link de activare, vă rugăm să folosiți URL-ul de mai jos pentru a activa contul dvs.#ACTIVATION-URL##INC-FOOTER#

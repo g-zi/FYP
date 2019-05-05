@@ -1,0 +1,1 @@
+﻿Bonjour #USERNAME#Merci de vous joindre à notre site #WEBSITENAME##ACTIVATION-MESSAGE##INC-FOOTER#

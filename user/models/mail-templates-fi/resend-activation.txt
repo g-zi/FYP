@@ -1,0 +1,1 @@
+﻿Haloo #USERNAME#Sinä tai joku muu on pyytänyt uuden aktivointilinkki, käytä url alla aktivoida tilisi#ACTIVATION-URL##INC-FOOTER#

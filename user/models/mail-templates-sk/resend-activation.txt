@@ -1,0 +1,1 @@
+﻿Ahoj #USERNAME#Vy alebo niekto iný požiadal o nový aktivačný odkaz, použite prosím nižšie url k aktivácii Vášho účtu#ACTIVATION-URL##INC-FOOTER#

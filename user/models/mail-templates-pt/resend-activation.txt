@@ -1,0 +1,1 @@
+﻿Olá #USERNAME#Você ou alguém pediu um novo link de ativação, por favor use o URL abaixo para ativar sua conta#ACTIVATION-URL##INC-FOOTER#

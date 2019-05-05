@@ -1,0 +1,1 @@
+﻿Привет #USERNAME#Добро пожаловать в наш веб-сайт #WEBSITENAME##ACTIVATION-MESSAGE##INC-FOOTER#
