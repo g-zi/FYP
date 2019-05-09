@@ -32,8 +32,13 @@
 					{
 						$alleID = escape($alleID);
 						$Bhf=$db->sql_fetchrow($db->sql_query("SELECT * FROM bahnhof WHERE id = ".$alleID.";"));
-						$db->sql_query("INSERT INTO treffen (Treffen,Betriebsstelle,Bhf_ID,Trf_Bem)
-						VALUES('$Treffen','$Bhf[Haltestelle]','$alleID','[$loggedInUser->user_id]');");
+						$db->sql_query("
+							INSERT INTO treffen (Treffen, Betriebsstelle, Bhf_ID, Trf_Bem)
+							SELECT '$Treffen', '$Bhf[Haltestelle]', '$alleID', '[$loggedInUser->user_id]'
+							FROM DUAL
+							WHERE NOT EXISTS(SELECT 1 FROM treffen
+							WHERE Treffen = '$Treffen' AND Bhf_ID = '$alleID')
+							LIMIT 1;");
 echo sql_error();
 					}
 				}
@@ -614,7 +619,8 @@ echo sql_error();
 		{
 			echo "<td align=middle ><a onclick=\"return\"href=Treffen.php?action=edit&Treffen_ID=".$row['id']."><img style='height:18px;border:0px' src='img/edit.png'></a></td>";
 
-			echo "<td align=middle><a onclick=\"return confirm('".$TEXT['lang-station'].'\n[ '.$row['Betriebsstelle']
+		//	echo "<td align=middle><a onclick=\"return confirm('".$TEXT['lang-station'].'\n[ '.$row['Betriebsstelle']
+			echo "<td align=middle><a onclick=\"return('".$TEXT['lang-station'].'\n[ '.$row['Betriebsstelle']
 			.' ]\n'.$TEXT['lang-del']."');\"href=Treffen.php?action=delete&Treffen_ID=".$row['id'].">
 			<img style='height:18px;border:0px' src='img/del.png'></a></td>";
 		}
