@@ -144,8 +144,6 @@ $num_fields = 2;
 */// test for db abstraction
 
 
-
-
 ?>
 
 <html>
@@ -154,28 +152,6 @@ $num_fields = 2;
 <title>Yellow Pages</title>
 </head>
 <body bgcolor=lightyellow>
-
-<?php	if(isUserLoggedIn() and $Bhf_ID=="")
-		{
-			$DeinBahnhof = $db->sql_fetchrow($db->sql_query("SELECT Bhf_ID FROM manage WHERE User = '$loggedInUser->display_username'"));
-			$row = $db->sql_fetchrow($db->sql_query("SELECT * FROM bahnhof WHERE id = '$DeinBahnhof[Bhf_ID]'"));
-		}
-		
-		if($Bhf_ID==0) 
-		{
-			$row = $db->sql_fetchrow($db->sql_query("SELECT id FROM bahnhof WHERE Haltestelle = 'Fritzlar' "));
-		}
-
-		$Bhf_ID=$row['id'];
-
-		if($Bhf_ID!="")
-		{
-			$row = $db->sql_fetchrow($db->sql_query("SELECT Haltestelle, Spur FROM bahnhof WHERE id = '$Bhf_ID' "));
-		}
-
-		$Betriebsstelle=$row['Haltestelle'];
-		$Spur=$row['Spur'];
-?>
 
 <table align='center' width='100%' height='100%' border='0' cellpadding='0' cellspacing='10' >
   <tr>

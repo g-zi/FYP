@@ -12,7 +12,6 @@ require_once("models/lang/".$_SESSION['language'].".php");
 $back = getVariableFromQueryStringOrSession('back');
 
 //Prevent the user visiting the logged in page if he/she is already logged in
-//if(isUserLoggedIn()) { header("Location: account.php"); die(); }
 if(isUserLoggedIn()) { header("Location: ../Main.php"); die(); }
 
 //Forms posted
@@ -82,6 +81,18 @@ if(!empty($_POST))
 					$row = $db->sql_fetchrow($db->sql_query("SELECT Language FROM Users WHERE Username = '$loggedInUser->display_username'"));
 					$lang=strtoupper($row['Language']);
 					$_SESSION['lang']=strtoupper($row['Language']);
+					
+					// load managed train station
+					$DeinBahnhof = $db->sql_fetchrow($db->sql_query("SELECT Bhf_ID FROM manage WHERE MainMngr_ID = '$loggedInUser->user_id'"));
+					$row = $db->sql_fetchrow($db->sql_query("SELECT * FROM bahnhof WHERE id = '$DeinBahnhof[Bhf_ID]'"));
+				
+					if($Bhf_ID==0) {
+						$DeinBahnhof = $db->sql_fetchrow($db->sql_query("SELECT Bhf_ID FROM manage WHERE MUser_ID = '$loggedInUser->user_id'"));
+						$row = $db->sql_fetchrow($db->sql_query("SELECT * FROM bahnhof WHERE id = '$DeinBahnhof[Bhf_ID]'"));}
+			
+					if($Bhf_ID==0) {$row = $db->sql_fetchrow($db->sql_query("SELECT id FROM bahnhof WHERE Haltestelle = 'Fritzlar' "));}
+					
+					$_SESSION['Bhf_ID'] = $row['id'];
 					
 					$_SESSION["sso"] = 0;
 
